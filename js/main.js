@@ -54,7 +54,7 @@ function setShadow(x, y, b, c) {
 function exportAsPng() {
     var date = new Date();
     bootbox.prompt({
-        title: "Enter output filename (without '.9.png')",
+        title: "输入文件名 (不包含 '.9.png')",
         value: "shadow_" + date.getHours() + "" + date.getMinutes() + "" + date.getSeconds(),
         callback: function(result) {
             if (result !== null && result !== "") {
@@ -247,8 +247,8 @@ function updateBounds(w, h) {
     var actualPaddingLeft = imageWidth/2 - w/2 - boundPos.leftPos;
     var actualPaddingRight = boundPos.rightPos - (imageWidth/2 + w/2);
 
-    var msg = ['actual size: [', actualWidth, actualHeight, ']',
-        ' shadow [', actualPaddingTop, actualPaddingRight, actualPaddingBottom, actualPaddingLeft,  ']'].join(' ');
+    var msg = ['实际尺寸: [', actualWidth, actualHeight, ']',
+        ' 阴影尺寸: [', actualPaddingTop, actualPaddingRight, actualPaddingBottom, actualPaddingLeft,  ']'].join(' ');
     //show the actual size
     $('#actual-padding').html(msg);
 

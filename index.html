@@ -6,7 +6,7 @@
     <meta name="keywords" content="android,9patch,ninepatch,convert,drawable,shadow,box,shadow4android">
     <meta name="author" content="Juraj Novák">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Android Shadow Generator</title>
+    <title>Android 阴影生成器</title>
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/bootstrap-slider.min.css" rel="stylesheet">
     <link href="css/main.css" rel="stylesheet">
@@ -30,14 +30,14 @@
 <div id="main-container" class="container">
     <div id="header">
         <img src="img/logo.svg" class="img-responsive pull-left" style="margin-right: 16px;"/>
-        <h3>Android 9-patch shadow generator</h3>
+        <h3>Android 9-patch 阴影生成器</h3>
         <p>fully customizable shadows</p>
     </div>
     <div class="row" id="mainrow">
 
         <div class="col-md-8" id="canvascol">
             <canvas width="1" height="1" id="shadow_image">
-                Sorry, you have an outdated browser!
+                对不起, 过旧的浏览器!
             </canvas>
         </div>
 
@@ -50,7 +50,7 @@
                              data-toggle="collapse" data-parent="#accordion" href="#collapseThree"
                              aria-expanded="true" aria-controls="collapseThree">
                             <h4 class="panel-title">
-                                Basic
+                                一般
                             </h4>
                         </div>
                         <div id="collapseThree" class="panel-collapse collapse in" role="tabpanel"
@@ -58,7 +58,7 @@
                             <div class="panel-body">
 
                                 <div class="form-group">
-                                    <label class="control-label">Round <span
+                                    <label class="control-label">圆角 <span
                                             style="font-weight: normal">[<a href="javascript:void(0)"
                                                                             id="round-toggle">advanced</a>]</span></label>
 
@@ -99,13 +99,13 @@
 
 
                                 <div class="form-group">
-                                    <label class="control-label" for="shadow-blur">Shadow blur</label>
+                                    <label class="control-label" for="shadow-blur">阴影模糊</label>
                                     <input id="shadow-blur" class="form-control" type="number" min="0" max="999"
                                            value="20">
                                 </div>
 
                                 <div class="form-group">
-                                    <label class="control-label" for="color-picker-shadow-input">Shadow color</label>
+                                    <label class="control-label" for="color-picker-shadow-input">阴影颜色</label>
 
                                     <div class="input-group" id="color-picker-shadow">
                                         <input id="color-picker-shadow-input" type="text" value="#757575"
@@ -116,7 +116,7 @@
 
 
                                 <div class="form-group">
-                                    <label class="control-label" for="shadow-offset-x">Shadow offset</label>
+                                    <label class="control-label" for="shadow-offset-x">阴影偏移</label>
 
                                     <div class="form-inline">
                                         <div class="input-group" style="width: 100%">
@@ -143,7 +143,7 @@
                              data-toggle="collapse" data-parent="#accordion"
                              href="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
                             <h4 class="panel-title">
-                                Fill &amp; Outline
+                                填充 &amp; 轮廓
                             </h4>
                         </div>
                         <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel"
@@ -152,13 +152,13 @@
 
                                 <div class="checkbox">
                                     <label>
-                                        <input type="checkbox" id="fill-toggle">Enabled
+                                        <input type="checkbox" id="fill-toggle">启用
                                     </label>
                                 </div>
 
                                 <div class="form-group" id="fill-group">
-                                    <label class="control-label" for="color-picker-fill-input" disabled>Fill
-                                        color</label>
+                                    <label class="control-label" for="color-picker-fill-input" disabled>填充
+                                        颜色</label>
 
                                     <div class="input-group" id="color-picker-fill">
 
@@ -170,7 +170,7 @@
 
                                 <div class="form-group" id="outline-group">
                                     <label class="control-label" for="color-picker-outline-input"
-                                           disabled>Outline</label>
+                                           disabled>轮廓</label>
 
                                     <div class="input-group" id="color-picker-outline">
                                         <input id="color-picker-outline-input" type="text" value="#000000"
@@ -179,7 +179,7 @@
                                     </div>
 
                                     <div class="form-group input-group" id="outline-width">
-                                        <span class="input-group-addon">Width</span>
+                                        <span class="input-group-addon">宽</span>
                                         <input id="outline-width-input" class="form-control" type="number" min="0"
                                                max="999" value="0" disabled>
                                     </div>
@@ -194,42 +194,40 @@
                              data-toggle="collapse" data-parent="#accordion"
                              href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
                             <h4 class="panel-title">
-                                Advanced
+                                高级
                             </h4>
                         </div>
                         <div id="collapseOne" class="panel-collapse collapse" role="tabpanel"
                              aria-labelledby="headingOne">
                             <div class="panel-body">
                                 <div class="form-group">
-                                    <label class="control-label" for="box-width">Box size</label>
+                                    <label class="control-label" for="box-width">最小尺寸</label>
                                     <div class="form-inline">
                                         <div class="input-group" style="width: 100%">
-                                            <span class="input-group-addon">Width</span>
+                                            <span class="input-group-addon">宽</span>
                                             <input id="box-width" class="form-control" type="number" min="0" max="2000"
                                                    value="0">
-                                            <span class="input-group-addon">Height</span>
+                                            <span class="input-group-addon">高</span>
                                             <input id="box-height" class="form-control" type="number" min="0" max="2000"
                                                    value="0">
                                         </div>
                                     </div>
-                                    <p class="small" style="color: gray;margin-top: 8px;">Drag right/bottom/corner to
-                                        change minimum size of
-                                        ninepatch.</p>
+                                    <p class="small" style="color: gray;margin-top: 8px;">拖拽 右边/底部/角落 修改 .9 图最小尺寸</p>
                                 </div>
                                 <div class="form-group">
-                                    <label class="control-label">Padding lines</label>
+                                    <label class="control-label">填充线</label>
 
                                     <div class="form-inline" id="padding-sliders">
                                         <div class="input-group" style="width: 100%;">
                                             <p style="margin-top: 15px;" id="padding-right-slider">
-                                                <label for="padding-right" class="control-label">right:</label>
+                                                <label for="padding-right" class="control-label">右侧:</label>
                                                 <input style="width: 70%"
                                                        id="padding-right" type="text" data-slider-min="0"
                                                        data-slider-max="100"
                                                        data-slider-step="1" data-slider-value="[0,100]"/>
                                             </p>
                                             <p style="margin-top: 35px;" id="padding-bottom-slider">
-                                                <label for="padding-bottom" class="control-label">bottom:</label>
+                                                <label for="padding-bottom" class="control-label">底部:</label>
                                                 <input style="width: 70%"
                                                        id="padding-bottom" type="text" data-slider-min="0"
                                                        data-slider-max="100"
@@ -240,44 +238,44 @@
                                 </div>
 
                                 <div class="form-group">
-                                    <label class="control-label">Side clipping</label>
+                                    <label class="control-label">边缘裁剪</label>
                                     <div class="form-inline">
                                         <label class="checkbox-inline">
-                                            <input type="checkbox" id="clip-left">Left
+                                            <input type="checkbox" id="clip-left">左
                                         </label>
                                         <label class="checkbox-inline">
-                                            <input type="checkbox" id="clip-right">Right
+                                            <input type="checkbox" id="clip-right">右
                                         </label>
                                         <label class="checkbox-inline">
-                                            <input type="checkbox" id="clip-top">Top
+                                            <input type="checkbox" id="clip-top">上
                                         </label>
                                         <label class="checkbox-inline">
-                                            <input type="checkbox" id="clip-bottom">Bottom
+                                            <input type="checkbox" id="clip-bottom">下
                                         </label>
                                     </div>
                                 </div>
                                 <div class="form-group">
-                                    <label class="control-label" for="box-width">Padding size</label>
+                                    <label class="control-label" for="box-width">填充尺寸</label>
                                     <div class="form-inline">
                                         <div class="input-group" style="width: 100%">
-                                            <span class="input-group-addon" style="width: 25%">Left</span>
+                                            <span class="input-group-addon" style="width: 25%">左</span>
                                             <input id="padding-left-line" class="form-control" type="number" min="0" max="2000"
                                                    value="0">
-                                            <span class="input-group-addon" style="width: 25%">Right</span>
+                                            <span class="input-group-addon" style="width: 25%">右</span>
                                             <input id="padding-right-line" class="form-control" type="number" min="0" max="2000"
                                                    value="0">
                                         </div>
                                         <div class="input-group" style="width: 100%">
-                                            <span class="input-group-addon" style="width: 25%">Top</span>
+                                            <span class="input-group-addon" style="width: 25%">上</span>
                                             <input id="padding-top-line" class="form-control" type="number" min="0" max="2000"
                                                    value="0">
-                                            <span class="input-group-addon" style="width: 25%">Bottom</span>
+                                            <span class="input-group-addon" style="width: 25%">下</span>
                                             <input id="padding-bottom-line" class="form-control" type="number" min="0" max="2000"
                                                    value="0">
                                         </div>
                                     </div>
-                                    <p class="small" style="color: gray;margin-top: 8px;">change padding line position to content</p>
-                                    <p id="actual-padding" class="small" style="color: gray;margin-top: 8px;">change padding line position to content</p>
+                                    <p class="small" style="color: gray;margin-top: 8px;">修改填充线相对于内容的间距</p>
+                                    <p id="actual-padding" class="small" style="color: gray;margin-top: 8px;">修改填充线相对于内容的间距</p>
                                 </div>
                             </div>
                         </div>
@@ -289,7 +287,7 @@
                              data-toggle="collapse" data-parent="#accordion" href="#collapseFour"
                              aria-expanded="true" aria-controls="collapseFour">
                             <h4 class="panel-title">
-                                Preview
+                                预览
                             </h4>
                         </div>
                         <div id="collapseFour" class="panel-collapse collapse" role="tabpanel"
@@ -298,19 +296,19 @@
 
                                 <div class="checkbox">
                                     <label>
-                                        <input type="checkbox" id="show-content">Show content area in preview
+                                        <input type="checkbox" id="show-content">显示内容区域
                                     </label>
                                 </div>
 
                                 <div class="checkbox">
                                     <label>
-                                        <input type="checkbox" id="hide-patches">Hide ninepatch lines in preview
+                                        <input type="checkbox" id="hide-patches">隐藏 .9 线
                                     </label>
                                 </div>
 
                                 <div class="checkbox">
                                     <label>
-                                        <input type="checkbox" id="bg-color-enable" value="silver">Set background color
+                                        <input type="checkbox" id="bg-color-enable" value="silver">背景颜色
                                     </label>
                                 </div>
                             </div>
@@ -318,7 +316,7 @@
                     </div>
                 </div>
 
-                <button type="button" class="btn btn-primary btn-block" onclick="exportAsPng(this)">Download</button>
+                <button type="button" class="btn btn-primary btn-block" onclick="exportAsPng(this)">下载</button>
             </div>
         </div>
     </div>
